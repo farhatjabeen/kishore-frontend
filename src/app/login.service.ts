@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class LoginService {
 
   constructor(private httpClient : HttpClient) { }
-  apiUrl='http://localhost:3000/student'; 
+  apiUrl='https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/student'; 
     
 
 login(data:any){

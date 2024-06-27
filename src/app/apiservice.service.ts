@@ -9,12 +9,12 @@ export class ApiserviceService {
 
   constructor(private _http:HttpClient) { }
    //connect frontend to backend
-   apiUrl = "http://localhost:3000/student"
-   apiUrl1='http://localhost:3000/department'
-   apiUrl2='http://localhost:3000/mark'
-   apiUrl3='http://localhost:3000/subject'
-   apiUrl4='http://localhost:3000/marksubmit' 
-   apiUrl5='http://localhost:3000/idcreation' 
+   apiUrl = "https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/student"
+   apiUrl1='https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/department'
+   apiUrl2='https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/mark'
+   apiUrl3='https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/subject'
+   apiUrl4='https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/marksubmit' 
+   apiUrl5='https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/idcreation' 
    // apiUrl=`${this.baseURL}student`;
    
  staffiddata(data:any):Observable<any>{
