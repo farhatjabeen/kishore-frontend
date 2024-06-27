@@ -32,10 +32,10 @@ export class AuthentcationService{
     private token : any 
 
     constructor(private http:HttpClient,private router:Router){}
-    apiUrl='http://localhost:3009/users/register';
-    apiUrl1='http://localhost:3009/users/login';
+    apiUrl='https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/users/register';
+    apiUrl1='https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/users/login';
     private saveToken(token:string):void{
-        localStorage.setItem('userToken',token)
+        localStorage.setItem('userToken',token)     
         this.token=token
     }
     private getToken():string{

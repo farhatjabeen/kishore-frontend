@@ -84,19 +84,19 @@ SubjectData():Observable<any>
        getOne(data:any,id:any)
       {
       
-        return this._http.get('http://localhost:3000/studentLoginspecific?id=' + data.roll_number + "&dob=" + data.date_of_birth)
+        return this._http.get('https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/studentLoginspecific?id=' + data.roll_number + "&dob=" + data.date_of_birth)
       }
   
 //Get Login by Satff Email_id and Password 
       staffone(data:any,)
       {
-         return this._http.get('http://localhost:3000/staff?id=' + data.email_id + "&dob=" + data.password)
+         return this._http.get('https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/staff?id=' + data.email_id + "&dob=" + data.password)
       }  
      
        getsingle(id:any):Observable<any>
       {
         let ids = id;
-        return this._http.get('http://localhost:3000/student/'+ ids)
+        return this._http.get('https://backendapp.reddesert-0ae85da2.centralindia.azurecontainerapps.io/student/'+ ids)
       } 
 
 //Get Mark Details
